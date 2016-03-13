@@ -66,8 +66,8 @@ namespace Toast
                 toastTextElements[0].AppendChild(toastXml.CreateTextNode(data));
 
             XmlNodeList toastImageAttributes = toastXml.GetElementsByTagName("image");
-            ((XmlElement)toastImageAttributes[0]).SetAttribute("src", "deepanshu.jpg");
-            ((XmlElement)toastImageAttributes[0]).SetAttribute("alt", "deepanshu.jpg");
+            ((XmlElement)toastImageAttributes[0]).SetAttribute("src", "");
+            ((XmlElement)toastImageAttributes[0]).SetAttribute("alt", "");
 
             IXmlNode toastNode = toastXml.SelectSingleNode("/toast");
             ((XmlElement)toastNode).SetAttribute("duration", "long");
