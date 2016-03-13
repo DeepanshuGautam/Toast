@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Toast.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Toast"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button 
+            x:Name="bGetToast" 
+            Content="Get Toast"
+            Click="bGetToast_click"
+            HorizontalAlignment="Center" 
+            Margin="0,100,0,0" 
+            VerticalAlignment="Center"/>
+        <Button 
+            x:Name="bExit"
+            Click="bExit_click"
+            Content="Exit" 
+            HorizontalAlignment="Center" 
+            Margin="0,400,0,0" 
+            VerticalAlignment="Center"/>
+        <TextBlock 
+            x:Name="textBlock"
+            HorizontalAlignment="Left" 
+            Margin="33,34,0,0" 
+            TextWrapping="Wrap" 
+            Text="Get Toast Notification"
+            FontSize="20"
+            VerticalAlignment="Top"/>
+        <TextBlock 
+            x:Name="textBlock1" 
+            HorizontalAlignment="Left" 
+            Margin="33,92,0,0" 
+            TextWrapping="Wrap" 
+            Text="Enter Text" 
+            FontSize="30"
+            VerticalAlignment="Top"/>
+        <TextBox 
+            x:Name="tbData" 
+            HorizontalAlignment="Left" 
+            Margin="33,150,0,0" 
+            TextWrapping="Wrap"
+            Text=""
+            PlaceholderText="Hello!"
+            VerticalAlignment="Top" 
+            Height="121"
+            Width="320"/>
+
+    </Grid>
+</Page>
